@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io/solutions/nft-preview-component](https://www.frontendmentor.io/solutions/nft-preview-component-GhX20d7N9S)
 - Live Site URL: [abulhashim.github.io/NFT-Preview-Component/](https://abulhashim.github.io/NFT-Preview-Component/)
 
 ## My process
