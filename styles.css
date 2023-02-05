@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --MainBackground: hsl(217, 54%, 11%);
+  --CardBackground: hsl(216, 50%, 16%);
+  --Line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --overlay: hsla(178, 100%, 50%, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--MainBackground);
+  min-height: 100vh;
+  justify-content: center;
+}
+
+body,
+.overlay,
+.nft-detail,
+.nft-rate-box,
+.days,
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+h1,
+.creator-name {
+  color: var(--White);
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+h1:hover,
+.creator-name:hover {
+  color: var(--Cyan);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: var(--SoftBlue);
+}
+
+hr {
+  border: 1px solid var(--Line);
+}
+
+.wrapper {
+  background-color: var(--CardBackground);
+  max-width: 21rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.75);
+}
+
+.image-container {
+  padding: 1.5rem 1.5rem;
+  position: relative;
+}
+
+.main-img {
+  max-width: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 1.5rem 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--overlay);
+  justify-content: center;
+  opacity: 0; /* Hide the overlay by default */
+  transition: opacity 0.3s ease; /* Add a transition to the opacity property */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0 1.6rem 2rem;
+}
+
+.nft-detail {
+  justify-content: space-between;
+  margin: 0.2rem 0;
+}
+
+.nft-detail img {
+  margin-right: 0.5rem;
+}
+
+.nft-rate {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+.creator {
+  gap: 1.2rem;
+}
+
+.creator p {
+  font-size: 1rem;
+}
+
+.avatar {
+  max-width: 30px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+}
